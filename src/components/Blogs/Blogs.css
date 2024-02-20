@@ -1,0 +1,22 @@
+.blogs {
+    background-color: #fff;
+    padding: 100px 0;
+  }
+  
+  .blog-item {
+    margin-bottom: 40px;
+  }
+  
+  .blog-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog-item p {
+    font-size: 1.1rem;
+  }
+  
+  .blog-item a {
+    color: #007bff;
+  }
+  
