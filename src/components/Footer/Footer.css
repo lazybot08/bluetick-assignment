@@ -1,7 +1,8 @@
 /* Footer.css */
-footer {
-  background-color: #333;
-  color: #fff;
+
+.footer {
+  background-color: #fff;
+  color: #333;
   padding: 50px 0;
 }
 
@@ -12,6 +13,7 @@ footer {
 
 .footer-content {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -23,49 +25,57 @@ footer {
 }
 
 .footer-column {
-  flex-basis: 30%; /* 3-column layout */
+  flex-basis: 30%;
 }
 
-.footer-logo h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+.footer-logo {
+  text-align: center;
 }
 
-.footer-logo p {
-  font-size: 1rem;
+.footer-logo img {
+  width: 300px;
   margin-bottom: 20px;
+}
+
+.footer-contact {
+  text-align: center;
 }
 
 .footer-contact p {
   margin: 10px 0;
-  font-size: 1rem;
 }
 
-.footer-links a {
-  display: block;
-  margin-bottom: 5px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9rem;
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.footer-links img {
+  width: 125px;
+  margin-right: 20px;
 }
 
+.footer-resources,
+.footer-products {
+  text-align: center;
+}
+
+.footer-logo h3,
 .footer-resources h3,
 .footer-products h3 {
-  font-size: 1.3rem;
+  font-size: 1.5em;
   margin-bottom: 15px;
 }
 
 .footer-resources a,
 .footer-products a {
   display: block;
-  margin-bottom: 5px;
-  color: #fff;
+  margin-bottom: 20px;
+  color: #333;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .footer-bottom {
@@ -78,7 +88,7 @@ footer {
 }
 
 .footer-bottom a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
 }
 
@@ -88,15 +98,20 @@ footer {
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
-  .footer-content {
-      flex-direction: column;
-  }
-  
-  .footer-section {
-      margin-bottom: 20px;
-  }
-  
   .footer-column {
-      flex-basis: 100%; /* Single column layout */
+    flex-basis: 100%;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .footer-links img {
+    margin-right: 10px;
+  }
+
+  .footer-resources a,
+  .footer-products a {
+    margin-bottom: 5px;
   }
 }

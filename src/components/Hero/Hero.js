@@ -4,6 +4,7 @@ import "./Hero.css";
 const HeroSection = () => {
   return (
     <section className="hero">
+      <div className="hero-overlay"></div>
       <div className="container">
         <div className="hero-content">
           <h1>Transforming Enterprises with Generative AI Solutions</h1>

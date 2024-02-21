@@ -1,22 +1,25 @@
 import React from 'react';
 import './Footer.css';
+import bluetickConsultants from '../../assets/bluetick-consultants.png';
+import glassdoorRating from '../../assets/glassdoor-rating.webp';
+import bluetickISO from '../../assets/bluetick-iso.webp';
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="footer">
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-section">
                         <div className="footer-column">
                             <div className="footer-logo">
-                                <h2>Bluetick Consultants</h2>
-                                <p>Bluetick Consultants LLP</p>
+                                <img src={bluetickConsultants} alt='Bluetick Consultants'/>
+                                <h3>Bluetick Consultants LLP</h3>
                             </div>
                             <div className="footer-contact">
-                                <p>Email: contact@bluetickconsultants.com</p>
+                                <p>contact@bluetickconsultants.com</p>
                                 <div className="footer-links">
-                                    <a href="https://www.glassdoor.com/Reviews/Bluetick-Consultants-Reviews-E4556710.htm" target="_blank" rel="noopener noreferrer">Glassdoor Review</a>
-                                    <a href="https://www.iso.org/" target="_blank" rel="noopener noreferrer">ISO Certified</a>
+                                    <a href="https://www.glassdoor.com/Reviews/Bluetick-Consultants-Reviews-E4556710.htm" target="_blank" rel="noopener noreferrer"><img src={glassdoorRating} alt='Glassdoor Rating'/></a>
+                                    <a href="https://www.iso.org/" target="_blank" rel="noopener noreferrer"><img src={bluetickISO} alt='ISO Certified'/></a>
                                 </div>
                             </div>
                         </div>
